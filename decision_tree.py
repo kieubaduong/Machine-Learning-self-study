@@ -17,6 +17,6 @@ label = [0,1,1,0,0,0,0,1]
 
 result = my_tree.fit(feature, label)
 
-kq = result.predict([[1,4,3,6],[1,4,3,7]])
+predictedResult = result.predict([[1,4,3,6],[1,4,3,7]])
 
-print(kq)
+print(predictedResult)

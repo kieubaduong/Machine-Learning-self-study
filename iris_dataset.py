@@ -36,6 +36,7 @@ for i in range(0, 100, 5):
     accuracy = np.append(accuracy, trained_model.score(x_test, y_test))
 
 plt.plot(size, accuracy)
+plt.title('Accuracy of the model with different test sizes')
 plt.xlabel('Test Size')
 plt.ylabel('Accuracy')
 plt.xticks(np.arange(size.min(), size.max()+0.1, step=0.1))

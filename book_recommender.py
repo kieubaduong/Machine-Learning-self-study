@@ -7,7 +7,10 @@ pd.set_option("display.expand_frame_repr", False)
 
 books = pd.read_csv('archive/Books.csv')
 rating = pd.read_csv('archive/Ratings.csv')
+rating = pd.read_csv('archive/Users.csv')
 
-df = rating.merge(books, how="left", on="ISBN")
-df.head()
-df.info()
+# df = rating.merge(books, how="left", on="ISBN")
+# df.head()
+# df.info()
+
+print(books.head())

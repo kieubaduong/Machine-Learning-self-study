@@ -9,4 +9,13 @@ calories = {"day1": 420, "day2": 380, "day3": 390}
 
 calories = pd.Series(calories)
 
-print(calories)
+# data frame is a 2D data structure, like a 2D array, or a table with rows and columns.
+# series is a 1D data structure, like a list, or an array with a single column.
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+data = pd.DataFrame(data)
+
+print(data)
